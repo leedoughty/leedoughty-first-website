@@ -1,0 +1,43 @@
+h1 {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 30px;
+  color: black;
+}
+
+a, p {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 14px;
+  color: black;
+}
+
+body {
+    padding: 2em;
+}
+
+header {
+  width: 100px
+}
+
+li {
+  padding-top: 2em;
+}
+
+.nounderline {
+  text-decoration: none;
+}
+
+img {
+  width: 240px;
+  display: block;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  position: absolute;
+  left: 140px;
+  top: 100px;
+}
