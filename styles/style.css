@@ -1,61 +1,107 @@
-h1 {
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  font-size: 30px;
-  color: black;
-}
-
-a, p {
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  font-size: 14px;
-  color: black;
-}
-
 body {
-    padding: 2em;
-}
-
-header {
-  width: 100px;
-}
-
-li {
-  padding-top: 2em;
-}
-
-.nounderline {
-  text-decoration: none;
-}
-
-img {
-  width: 240px;
-  display: block;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: center;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  position: absolute;
-  left: 140px;
-  top: 100px;
-}
-
-#container {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 100;
   background-color: white;
 }
 
-#content-image {
-  background-color: black;
-  width: auto;
-  height: 100%;
+/* .lee {
+  position: relative;
+} */
+
+/* div.lee {
+  height: 10em;
+  position: relative;
+} */
+
+#htmlContainer {
+  z-index: -100;
 }
 
-.hidden {
-  display: none;
+.lee {
+  z-index: -1;
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  /* margin-right: -50%; */
+  transform: translate(-50%, -50%);
+  font-family: helvetica;
 }
+
+
+.contact {
+  z-index: 100;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  opacity: 0.5;
+  text-align: center;
+    /* margin-right: -50%; */
+  transform: translate(-50%, -50%);
+  font-family: helvetica;
+}
+
+.works {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  /* opacity: 0.5; */
+  text-align: center;
+    /* margin-right: -50%; */
+  transform: translate(-50%, -50%);
+  font-family: helvetica;
+  top: 60%;
+  z-index: 100;
+  /* position: absolute; */
+}
+
+
+.title {
+  font-size: 16px;
+  font-family: "inconsolata", sans-serif;
+  padding-left: 5%;
+  padding-top: 5%;
+  font-size: 40px;
+  color: black;
+}
+
+a {
+  font-size: 16px;
+  font-family: helvetica;
+  color: black;
+  text-decoration: none;
+  line-height: 2;
+}
+
+/* p {
+  font-size: 20px;
+  font-family: inconsolata;
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  /* padding-left: 5%;
+  padding-top: 5%;
+}
+
+.bio {
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+.yume1 {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  padding-left: 25%;
+  padding-top: 5%;
+}
+
+.yume2 {
+  width: 20%;
+}
+
+.about {
+  right: 90;
+} */

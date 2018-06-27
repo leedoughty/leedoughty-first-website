@@ -1,30 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Lee Doughty</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  </head>
-  <body>
-    <h1 id="name">Lee Doughty</h1>
-    <header>
-      <!-- <script src="p5/p5.min.js"></script>
-      <script src="p5/addons/p5.dom.min.js"></script>
-      <script src="p5/addons/p5.sound.min.js"></script>
-      <script src="p5/empty-example/sketch.js"></script> -->
-      <nav>
-       <ul>
-         <li><a class="nounderline" href="index.html" title="index">Home</a></li>
-         <li><a class="nounderline" href="pages/film.html" title="work">Film</a></li>
-         <li><a class="nounderline" href="pages/about.html" title="about">About</a></li>
-         <li><a class="nounderline" href="pages/creativecoding.html" title="creative coding">Creative Coding</a></li>
-       </ul>
-      </nav>
-    </header>
-  </body>
-</html>
+<html>
+<head>
+  <title>UNDER CONSTRUCTION</title>
 
-<!-- <p>Under Construction</p> -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js">
+  </script>
+  <script>
+  var cursorRed; // Declare variable 'img'.
+
+var images = [
+  "muji/muji1.png",
+  "muji/muji2.png",
+  "muji/muji3.png",
+  "muji/muji4.png",
+  "muji/muji5.png",
+  "muji/muji6.png",
+  "muji/muji7.png",
+  "muji/muji8.png",
+  "muji/muji9.png",
+  "muji/muji10.png",
+  "muji/muji11.png",
+  "muji/muji12.png",
+  "muji/muji13.png",
+  "muji/muji14.png",
+  "muji/muji15.png",
+  "muji/muji16.png",
+  "muji/muji17.png",
+  "muji/muji18.png",
+  "muji/muji19.png",
+  "muji/muji20.png",
+  "muji/muji21.png",
+  "muji/muji22.png",
+  "muji/muji23.png",
+  "muji/muji24.png",
+  "muji/muji25.png",
+  "muji/muji26.png",
+  "muji/muji27.png",
+  "muji/muji28.png",
+  "muji/muji29.png",
+  "muji/muji30.png",
+  "muji/muji31.png",
+  "muji/muji32.png"
+];
+var loadedImages = [];
+var currentX;
+var currentY;
+var htmlContainer;
+// cursorRed = loadImage("red cross outline.jpg")
+
+function setup() {
+  //noCursor();
+  htmlContainer = createCanvas(windowWidth, windowHeight);
+  htmlContainer.parent("htmlContainer");
+  // htmlContainer.position(0,0);
+  // htmlContainer.position(0,0);
+  // htmlContainer.style('z-index', '-1');
+  //background(0,0,255); BLUE BACKGROUND
+  //Orange background (below) //background(255,105,0);
+  for (var i = 0; i < images.length; i++) {
+    loadedImages[i] = loadImage(images[i]);
+  }
+  frameRate(10);
+  //img = loadImage("desk2.jpg");  // Load the image
+}
+
+function draw() {
+  cursor(cursorRed, 32, 32);
+  //Draws an orange circle where mouse is
+  //stroke(255,105,0);//fill(255,105,0); //ellipse(mouseX,mouseY,30,30);
+  if (mouseX != currentX || mouseY != currentY) {
+    var randomImage =
+      loadedImages[Math.floor(Math.random() * loadedImages.length)];
+    // Displays the image at its actual size at point (0,0)
+    //image(img, 0, 0);
+    // Displays the image at point (0, height/2) at half size
+    var imageX = mouseX - randomImage.width / 16;
+    var imageY = mouseY - randomImage.height / 16;
+    image(
+      randomImage,
+      imageX,
+      imageY,
+      randomImage.width / 8,
+      randomImage.height / 8
+    );
+
+    currentX = mouseX;
+    currentY = mouseY;
+  }
+}
+//function mousePressed(){
+//redraw();
+</script>
+</head>
+<body>
+  <!-- <div class="lee"> -->
+    <a class="lee" href="home.html">LEE DOUGHTY</a>
+    <div id="htmlContainer"></div>
+  </div>
+   <!-- <ul>
+     <li><a href="http://www.preload.net">preload</a></li>
+     <li><a href="http://www.nodulesofflint.com">nodules of flint</a></li>
+     <li><a href="http://incahootsbrighton.com">in cahoots</a></li>
+     <li><a href="http://billbot.online">billbot</a></li>
+     <li><a href="pages/kenjikishiyume.html">kenji kishi, yume</a></li>
+     <li><a>laughter yoga</a></li>
+     <li>
+
+   </li>
+   </ul> -->
+
+   <ul class="contact">
+     <li>code + design</li>
+     <li>leedoughtydesign@gmail.com</li>
+
+   </ul>
+
+   <ul class="works">
+     <li><a  href="http://www.preload.net">PRELOAD</a></li>
+     <li><a href="http://www.nodulesofflint.com">NODULES OF FLINT</a></li>
+     <li><a href="http://incahootsbrighton.com">IN CAHOOTS</a></li>
+     <li><a href="yume.html">YUME</a></li>
+     <li><a href="http://billbot.online">BILLBOT.ONLINE</a></li>
+     <br >
+     <br >
+     <li><a href="type.html">TYPE</a></li>
+
+
+   </ul>
+  </div>
+</body>
+</html>
