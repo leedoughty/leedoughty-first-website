@@ -1,134 +1,50 @@
 <html>
 <head>
-  <title>UNDER CONSTRUCTION</title>
-
+  <title>Lee Doughty</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/style.css">
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"> -->
-  </script>
-  <script>
-  var cursorRed; // Declare variable 'img'.
-
-var images = [
-  "muji/muji1.png",
-  "muji/muji2.png",
-  "muji/muji3.png",
-  "muji/muji4.png",
-  "muji/muji5.png",
-  "muji/muji6.png",
-  "muji/muji7.png",
-  "muji/muji8.png",
-  "muji/muji9.png",
-  "muji/muji10.png",
-  "muji/muji11.png",
-  "muji/muji12.png",
-  "muji/muji13.png",
-  "muji/muji14.png",
-  "muji/muji15.png",
-  "muji/muji16.png",
-  "muji/muji17.png",
-  "muji/muji18.png",
-  "muji/muji19.png",
-  "muji/muji20.png",
-  "muji/muji21.png",
-  "muji/muji22.png",
-  "muji/muji23.png",
-  "muji/muji24.png",
-  "muji/muji25.png",
-  "muji/muji26.png",
-  "muji/muji27.png",
-  "muji/muji28.png",
-  "muji/muji29.png",
-  "muji/muji30.png",
-  "muji/muji31.png",
-  "muji/muji32.png"
-];
-var loadedImages = [];
-var currentX;
-var currentY;
-var htmlContainer;
-// cursorRed = loadImage("red cross outline.jpg")
-
-function setup() {
-  //noCursor();
-  htmlContainer = createCanvas(windowWidth, windowHeight);
-  htmlContainer.parent("htmlContainer");
-  // htmlContainer.position(0,0);
-  // htmlContainer.position(0,0);
-  // htmlContainer.style('z-index', '-1');
-  //background(0,0,255); BLUE BACKGROUND
-  //Orange background (below) //background(255,105,0);
-  for (var i = 0; i < images.length; i++) {
-    loadedImages[i] = loadImage(images[i]);
-  }
-  frameRate(10);
-  //img = loadImage("desk2.jpg");  // Load the image
-}
-
-function draw() {
-  cursor(cursorRed, 32, 32);
-  //Draws an orange circle where mouse is
-  //stroke(255,105,0);//fill(255,105,0); //ellipse(mouseX,mouseY,30,30);
-  if (mouseX != currentX || mouseY != currentY) {
-    var randomImage =
-      loadedImages[Math.floor(Math.random() * loadedImages.length)];
-    // Displays the image at its actual size at point (0,0)
-    //image(img, 0, 0);
-    // Displays the image at point (0, height/2) at half size
-    var imageX = mouseX - randomImage.width / 16;
-    var imageY = mouseY - randomImage.height / 16;
-    image(
-      randomImage,
-      imageX,
-      imageY,
-      randomImage.width / 8,
-      randomImage.height / 8
-    );
-
-    currentX = mouseX;
-    currentY = mouseY;
-  }
-}
-//function mousePressed(){
-//redraw();
-</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="../scripts/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../scripts/script.js"></script>
+  <script type="text/javascript" src="../scripts/index-general.js"></script>
+  <script type="text/javascript" src="../scripts/index.js"></script>
 </head>
 <body>
-  <!-- <div class="lee"> -->
-    <a class="lee" href="home.html">LEE DOUGHTY</a>
-    <div id="htmlContainer"></div>
+  <div id="head-block"></div>
+  <div id="header">
+  <div id="top-block">
   </div>
-   <!-- <ul>
-     <li><a href="http://www.preload.net">preload</a></li>
-     <li><a href="http://www.nodulesofflint.com">nodules of flint</a></li>
-     <li><a href="http://incahootsbrighton.com">in cahoots</a></li>
-     <li><a href="http://billbot.online">billbot</a></li>
-     <li><a href="pages/kenjikishiyume.html">kenji kishi, yume</a></li>
-     <li><a>laughter yoga</a></li>
-     <li>
+</div>
+  <div class="container">
 
-   </li>
-   </ul> -->
+      <a href="pages/incahoots.html">
+      <img class="website" src="../images/index/incahoots.png">
+      </a>
 
-   <ul class="contact">
-     <li>code + design</li>
-     <li>leedoughtydesign@gmail.com</li>
-     <!-- <a href="about.html">About</a> -->
+      <a href="pages/nodulesofflint.html">
+      <img class="website" src="../images/index/nodulesofflint.png" href="http://google.com">
+      </a>
 
-   </ul>
+      <a href="pages/preload.html">
+      <img class="website" src="../images/index/preload.png">
+      </a>
 
+      <a href="pages/yume.html">
+      <img class="work" src="../images/index/yume.jpg">
+      </a>
 
-   <ul class="works">
-     <li><a  href="http://www.preload.net">PRELOAD</a></li>
-     <li><a href="http://www.nodulesofflint.com">NODULES OF FLINT</a></li>
-     <li><a href="http://incahootsbrighton.com">IN CAHOOTS</a></li>
-     <li><a href="yume.html">YUME</a></li>
+      <!-- <a href="pages/billbot.html">
+      <img class="work" src="../images/index/billbot3.gif">
+      </a> -->
+
+      <!-- <img class="jpn" src="../images/index/japanese.jpg"> -->
+  </div>
+
+     <!-- <li><a href="pages/yume.html">YUME</a></li>
      <li><a href="http://billbot.online">BILLBOT.ONLINE</a></li>
-     <br >
-     <br >
-     <li><a href="type.html">TYPE</a></li>
-      <li><a  href="websites.html">WEBSITES</a></li>
-   </ul>
+     <li><a href="pages/type.html">TYPE</a></li>
+     <li><a  href="pages/websites.html">WEBSITES</a></li> -->
   </div>
 </body>
 </html>

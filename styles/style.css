@@ -1,107 +1,234 @@
+@font-face {
+  font-family: "DIN";
+  src:url("../type/DINMittelschriftStd.otf");
+}
+
+html {
+  height: 100%;
+}
+
 body {
   background-color: white;
+  height: 100%;
+  font-family: "DIN";
 }
 
-/* .lee {
-  position: relative;
-} */
-
-/* div.lee {
-  height: 10em;
-  position: relative;
-} */
-
-#htmlContainer {
-  z-index: -100;
+header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  padding: 3vh 0;
+  font-size: 0.75rem;
 }
 
-.lee {
-  z-index: -1;
-  margin: 0;
+header h1 {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-family: 'DIN';
+}
+
+
+
+#title {
+  font-size: 4rem;
+  font-size: 2rem;
+  font-family: Helvetica;
+  /* margin-top: 5%;
+  margin-left: 5%; */
+  left: 5%;
+  bottom: 25%;
   position: absolute;
-  top: 35%;
-  left: 50%;
-  /* margin-right: -50%; */
-  transform: translate(-50%, -50%);
-  font-family: helvetica;
 }
 
+#project-bio-container {
+  position: absolute;
+  /* border: 1px solid red; */
+  /* margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 70%; */
+  top: 78%;
+  /* bottom: 10%; */
+  right: 70%;
+  left: 5%;
+  font-family: Helvetica;
+}
 
-.contact {
+#theImg {
+  position: absolute;
+  top: 8%;
+  left: 2%;
+  width: 50%;
+}
+
+#yumeImg {
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  width: 30%;
+}
+
+#randomLocation {
+  padding-top: 20%;
+  right: 20%;
+  padding-bottom: 20%;
+  left: 90%;
+}
+
+.about-btn {
+  position: fixed;
+  left: 5%;
+  /* font-family: "DIN"; */
+}
+
+.contact-btn {
+  position: fixed;
+  right: 5%;
+  /* font-family: "DIN"; */
+}
+
+.work-images {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+
+.rockgif {
+  position: relative;
+  margin-top: 10%;
+  margin-left: 50%;
+  width: 30%;
+}
+
+.rockgif2 {
+  position: relative;
+  margin-top: 5%;
+  margin-left: 80%;
+  width: 40%;
+}
+
+a {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+.jpn {
+  width: 20%;
+}
+
+.content {
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+
+.website {
+  height: 30%;
+}
+
+.work {
+  height: 40%;
+}
+
+ #top-block {
+  position: relative;
+}
+
+.container {
+  position: relative;
+  /* border: 1px red solid; */
+  height: 100%;
+}
+
+.sites {
+  width: 30%;
+  height: auto;
+}
+
+.container img {
+  position: absolute;
+}
+
+image {
+  top: 100px;
+}
+
+#work2 {
+  grid-column: span 8;
+}
+
+ul {
   z-index: 100;
   margin: 0;
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 20%;
+  left: 8%;
   opacity: 0.5;
-  text-align: center;
-    /* margin-right: -50%; */
+  text-align: left;
   transform: translate(-50%, -50%);
   font-family: helvetica;
 }
-
-.works {
-  margin: 0;
-  position: absolute;
-  left: 50%;
-  /* opacity: 0.5; */
-  text-align: center;
-    /* margin-right: -50%; */
-  transform: translate(-50%, -50%);
-  font-family: helvetica;
-  top: 60%;
-  z-index: 100;
-  /* position: absolute; */
-}
-
 
 .title {
   font-size: 16px;
-  font-family: "inconsolata", sans-serif;
   padding-left: 5%;
   padding-top: 5%;
   font-size: 40px;
   color: black;
 }
 
-a {
-  font-size: 16px;
-  font-family: helvetica;
-  color: black;
-  text-decoration: none;
-  line-height: 2;
-}
-
-/* p {
-  font-size: 20px;
-  font-family: inconsolata;
-  color: black;
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-  /* padding-left: 5%;
-  padding-top: 5%;
+.bio-container {
+  left: 5%;
+  top: 15%;
+  right: 70%;
+  position: fixed;
+  font-family: Helvetica;
+  line-height: 1.4;
 }
 
 .bio {
-  font-size: 20px;
-  padding-left: 50px;
+  font-size: 4rem;
 }
 
-.yume1 {
-  width: 20%;
-  height: auto;
+.project-title {
+  font-size: 2rem;
+  font-family: Helvetica;
+  margin-top: 5%;
+  margin-left: 5%;
   position: absolute;
-  padding-left: 25%;
-  padding-top: 5%;
 }
 
-.yume2 {
-  width: 20%;
+
+.project-bio {
+  position: relative;
 }
 
-.about {
-  right: 90;
+/* .lee {
+  left: 50%;
+  top: 50%;
+  position: absolute;
 } */
+
+.contact {
+  margin-left: 5%;
+  margin-top: 5%;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+  header h1 {
+    font-size: 4rem;
+  }
+  .bio {
+    font-size: 50px;
+    text-align: left;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .rockgif {
+    width: 80%;
+  }
+}
