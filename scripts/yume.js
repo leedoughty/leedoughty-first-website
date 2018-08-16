@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  loader("Yume", "Collaboration with Paige Scalco, Branding for musician “Kenji Kishi”. Fusing analogue techinques with generative art.", "yumeImg", "../images/yume/yume.jpg");
+  loader("Yume", "Collaboration with Paige Scalco, Branding for musician “Kenji Kishi”. Combining analogue techniques with generative art, coded with p5.js and manipulating SVGs with JavaScript", "yumeImg", "../images/yume/yume.jpg");
 });
 
 // // positioning images randomly within a div
