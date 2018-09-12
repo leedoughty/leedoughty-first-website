@@ -1,3 +1,6 @@
+// if (window.innerWidth > 800) {
+
+
 var works = [];
 var position_div;
 var divWidth;
@@ -56,3 +59,4 @@ class Work {
                rect.bottom < this.top);
   }
 }
+// }

@@ -228,7 +228,6 @@ ul {
   position: absolute;
 }
 
-
 .project-bio {
   position: relative;
 }
@@ -245,7 +244,7 @@ ul {
   font-size: 2rem;
 }
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
   header h1 {
     font-size: 4rem;
   }
@@ -258,5 +257,22 @@ ul {
   }
   .rockgif {
     width: 80%;
+  }
+} */
+
+@media screen and (max-width: 800px){
+  .container {
+    padding-top: 80px;
+  }
+  .container img {
+    /* flex-direction: column;
+    position: absolute; */
+    width: 80%;
+    height: auto;
+    position: relative;
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
