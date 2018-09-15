@@ -1,20 +1,18 @@
-// if (window.innerWidth > 800) {
-
-
 var works = [];
 var position_div;
 var divWidth;
 var divHeight;
 
 class Work {
-
-  constructor(img) {
-    this.img = img;
-    this.width = this.img.width();
-    this.height = this.img.height();
+//define what a constructor is in this comment
+constructor(img) {
+  this.img = img;
+  this.width = this.img.width();
+  this.height = this.img.height();
   }
 
-  choosePosition() {
+// choose a random position inside the div in which to play the work images
+choosePosition() {
     let count = 0;
     var intersecting = true;
     while (intersecting === true && count < 500 ) {
@@ -39,7 +37,8 @@ class Work {
     this.place(xPos, yPos);
   }
 
-  place(xPos, yPos){
+//find a random place in the x and y positions
+place(xPos, yPos){
     this.x = xPos;
     this.y = yPos;
     this.img.css("top", yPos + "px");
@@ -52,11 +51,11 @@ class Work {
     }
   }
 
-  intersect(rect) {
-      return !(rect.left > this.right ||
-               rect.right < this.left ||
-               rect.top > this.bottom ||
-               rect.bottom < this.top);
+//algorithm to prevent images from overlapping
+intersect(rect) {
+    return !(rect.left > this.right ||
+             rect.right < this.left ||
+             rect.top > this.bottom ||
+             rect.bottom < this.top);
   }
 }
-// }
