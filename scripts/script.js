@@ -31,9 +31,7 @@ choosePosition() {
           intersecting = true;
         };
       }
-      console.log(intersecting);
     }
-    console.log(count);
     this.place(xPos, yPos);
   }
 
