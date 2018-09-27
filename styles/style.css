@@ -264,6 +264,8 @@ ul {
   }
 } */
 
+
+
 .github {
   padding-top: 20px;
   padding-left: 80px;
@@ -283,5 +285,8 @@ ul {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  #project-bio-container {
+    
   }
 }
