@@ -34,7 +34,7 @@ class Work {
     this.place(xPos, yPos);
   }
 
-  //find a random place in the x and y positions
+  // find a random place in the x and y positions
   place(xPos, yPos) {
     this.x = xPos;
     this.y = yPos;
@@ -48,7 +48,7 @@ class Work {
     }
   }
 
-  //algorithm to prevent images from overlapping
+  // algorithm to prevent images from overlapping
   intersect(rect) {
     return !(
       rect.left > this.right ||
@@ -65,7 +65,6 @@ class Work {
 }
 
 $(document).ready(initLayout);
-// $(window).on('resize', initLayout);
 
 const desktop = window.matchMedia("(min-width: 800px)");
 let resizedWindow;
@@ -109,108 +108,3 @@ const mqlMobile = window.matchMedia("(max-width: 800px)")
     }
   })
 }
-
-
-// previous ver
-//
-// $(document).ready(initLayout);
-// // $(window).on('resize', initLayout);
-//
-// let resizedWindow;
-// window.onresize = function(){
-//   clearTimeout(resizedWindow);
-//   resizedWindow = setTimeout(initLayout, 2000);
-// }
-//
-// function initLayout() {
-//   loader();
-//   if (window.innerWidth > 800) {
-//     // sorting out the height and width of the div
-//     position_div = $("div.container");
-//     divWidth = position_div.width();
-//     divHeight = position_div.height();
-//     // position_div.height(divHeight);
-//     // finding the images
-//     $(".container img").each(function(){
-//       let work = new Work($(this));
-//       works.push(work);
-//       work.choosePosition();
-//     });
-//   }
-//   // mobile version refresh
-//   if (window.innerWidth < 800) {
-//
-//   }
-// }
-
-
-
-// if (window.innerWidth < 800) {
-//   $(document).ready(function(){
-//     //Check if the current URL contains '# or hash'
-//     if(document.URL.indexOf("#")==-1){
-//         // Set the URL to whatever it was plus "#loaded".
-//         url = document.URL+"#loaded";
-//         location = "#loaded";
-//         //Reload the page using reload() method
-//         location.reload(true);
-//     }
-// });
-// }
-
-
-
-
-
-//previous:
-
-// positioning images randomly within a div
-
-// $(document).ready(function(){
-//   loader();
-//   $(window).on('resize',function() {
-//     if (window.innerWidth > 800) {
-//       // sorting out the height and width of the div
-//       position_div = $("div.container");
-//       divWidth = position_div.width();
-//       divHeight = position_div.height();
-//       // position_div.height(divHeight);
-//       // finding the images
-//       $(".container img").each(function(){
-//         let work = new Work($(this));
-//         works.push(work);
-//         work.choosePosition();
-//       })
-//     };
-//   });
-// });
-
-
-
-//new try
-// $(document).ready(function(){
-//   loader();
-//   $(window).on('resize',function() {
-//     if (window.innerWidth > 800) {
-//       // sorting out the height and width of the div
-//       position_div = $("div.container");
-//       divWidth = position_div.width();
-//       divHeight = position_div.height();
-//       // position_div.height(divHeight);
-//       // finding the images
-//       $(".container img").each(function(){
-//         let work = new Work($(this));
-//         works.push(work);
-//         work.choosePosition();
-//       })
-//     };
-//   });
-// });
-
-
-
-
-// create own function
-//
-// look at timeout (seconds to stop javascript) look at refactoring)
-// delay, check that its changed, resize to that size

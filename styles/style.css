@@ -1,7 +1,15 @@
+/*
+typography
+*/
+
 @font-face {
   font-family: "DIN";
-  src:url("../type/DINMittelschriftStd.otf");
+  src: url("../type/DINMittelschriftStd.otf");
 }
+
+/*
+all pages
+*/
 
 html {
   height: 100%;
@@ -26,31 +34,89 @@ header h1 {
   text-align: center;
   display: block;
   margin: 0 auto;
-  font-family: 'DIN';
+  font-family: "DIN";
 }
+
+a {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+a:focus {
+  background-color: blue;
+}
+
+/*
+index.html
+*/
+
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.website {
+  height: 30%;
+}
+
+.work {
+  height: 40%;
+}
+
+/*
+about.html
+*/
+
+.about-bio-container {
+  position: fixed;
+  top: 10%; left: 40%; bottom: 0; right: 0;
+  margin: auto;
+  width: 300px;
+  height: 250px;
+}
+
+.about-bio {
+  font-size: 4rem;
+}
+
+.about-image-container {
+  position: fixed;
+  top: 30%; left: 40%; bottom: 0; right: 0;
+  margin: auto;
+  width: auto;
+}
+
+.about-image {
+  height: 200px;
+}
+
+/*
+contact.html
+*/
+
+.contact {
+  margin-left: 5%;
+  margin-top: 5%;
+  font-size: 2rem;
+}
+
+.github {
+  padding-top: 20px;
+  padding-left: 80px;
+}
+
+/*
+All Pages
+*/
 
 #title {
   font-size: 4rem;
   font-size: 2rem;
   font-family: Helvetica;
-  /* margin-top: 5%;
-  margin-left: 5%; */
   left: 5%;
   bottom: 25%;
   position: absolute;
-}
-
-#project-bio-container {
-  position: absolute;
-  /* border: 1px solid red; */
-  /* margin-top: 10%;
-  margin-left: 5%;
-  margin-right: 70%; */
-  top: 78%;
-  /* bottom: 10%; */
-  right: 70%;
-  left: 5%;
-  font-family: Helvetica;
 }
 
 #theImg {
@@ -77,13 +143,11 @@ header h1 {
 .about-btn {
   position: fixed;
   left: 5%;
-  /* font-family: "DIN"; */
 }
 
 .contact-btn {
   position: fixed;
   right: 5%;
-  /* font-family: "DIN"; */
 }
 
 .work-images {
@@ -92,7 +156,7 @@ header h1 {
   width: auto;
 }
 
-/* work */
+/* NODULES OF FLINT */
 
 .rockgif1 {
   position: absolute;
@@ -108,6 +172,8 @@ header h1 {
   width: 10%;
 }
 
+/* IN CAHOOTS */
+
 .incahoots {
   position: absolute;
   margin-top: 25%;
@@ -115,12 +181,16 @@ header h1 {
   width: 30%;
 }
 
+/* PRELOAD */
+
 .preload1 {
   position: absolute;
   margin-top: 30%;
   margin-left: 55%;
   width: 30%;
 }
+
+/* YUME */
 
 .yume {
   position: absolute;
@@ -136,14 +206,24 @@ header h1 {
   width: 10%;
 }
 
-a {
-  font-size: 16px;
-  color: black;
-  text-decoration: none;
+.yume-bio {
+  width: 80%;
+  height: auto;
+  position: relative;
+  padding-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-a:focus {
-  background-color: blue;
+.bio-image-container {
+  /* width: 80%; */
+  height: auto;
+  position: relative;
+  padding-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .jpn {
@@ -156,23 +236,11 @@ a:focus {
   top: 0;
 }
 
-.website {
-  height: 30%;
-}
-
-.work {
-  height: 40%;
-}
-
- #top-block {
+#top-block {
   position: relative;
 }
 
-.container {
-  position: relative;
-  /* border: 1px red solid; */
-  height: 100%;
-}
+
 
 .sites {
   width: 30%;
@@ -211,73 +279,39 @@ ul {
   color: black;
 }
 
-.bio-container {
-  left: 5%;
-  top: 15%;
-  right: 70%;
-  position: fixed;
-  font-family: Helvetica;
-  line-height: 1.4;
-}
+/*
+project-bio
+*/
 
-.bio {
-  font-size: 4rem;
+.project-title-container {
+  position: relative;
+  width: 100%;
+  margin-top: 3rem;
+  margin-left: 10%;
 }
 
 .project-title {
   font-size: 2rem;
   font-family: Helvetica;
-  margin-top: 5%;
-  margin-left: 5%;
+  text-align: left;
+}
+
+.project-bio-container {
   position: absolute;
 }
 
-.project-bio {
-  position: relative;
+.image-container {
+  width: 100%;
+  height: 100%;
 }
 
-/* .lee {
-  left: 50%;
-  top: 50%;
-  position: absolute;
-} */
+/* RESPONSIVE DESIGN */
 
-.contact {
-  margin-left: 5%;
-  margin-top: 5%;
-  font-size: 2rem;
-}
-
-/* @media screen and (max-width: 400px) {
-  header h1 {
-    font-size: 4rem;
-  }
-  .bio {
-    font-size: 50px;
-    text-align: left;
-  }
-  .content {
-    flex-direction: column;
-  }
-  .rockgif {
-    width: 80%;
-  }
-} */
-
-
-
-.github {
-  padding-top: 20px;
-  padding-left: 80px;
-}
-
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
   .container {
     padding-top: 80px;
   }
   .container img {
-    /* flex-direction: column;
-    position: absolute; */
     width: 80%;
     height: auto;
     position: relative;
@@ -286,7 +320,28 @@ ul {
     margin-left: auto;
     margin-right: auto;
   }
-  #project-bio-container {
-    
+  .image-container {
+    width: 80%;
+    height: auto;
+    position: relative;
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+
+@media screen and (min-width: 801px) {
+  .bio-image-container {
+    width: 30%;
+  }
+  .bio-container {
+      margin-left: 10%;
+      margin-top: 5%;
+      margin-right: 70%;
+      font-family: helvetica;
+      line-height: 20px;
+      text-align: right;
+  }
+
 }
