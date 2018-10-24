@@ -50,12 +50,7 @@ a:focus {
 
 a:hover {
   text-decoration: underline;
-
 }
-
-/*
-all Pages
-*/
 
 .about-btn {
   position: fixed;
@@ -140,13 +135,99 @@ contact.html
   padding-left: 80px;
 }
 
-/* RESPONSIVE DESIGN */
+/*
+front page responsive design
+*/
 
 @media screen and (max-width: 800px) {
   .container {
     padding-top: 80px;
   }
   .container img {
+    width: 80%;
+    height: auto;
+    position: relative;
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*
+mobile first work layout
+*/
+
+@media screen and (max-width: 800px) {
+  .project-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-title-container {
+    font-size: 3rem;
+    margin: 15vh 0 5vh;
+  }
+  .bio-container {
+    width: 50vw;
+    margin-bottom: 2vh;
+  }
+  .project-bio {
+    font-family: helvetica;
+  }
+  .image-container {
+    width: 80%;
+    height: auto;
+    position: relative;
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .work-image {
+    width: 80%;
+    height: auto;
+    position: relative;
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*
+work pages layout desktop
+*/
+
+@media screen and (min-width: 801px) {
+  .project-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-title-container {
+    font-size: 3rem;
+    margin: 15vh 0 5vh;
+  }
+  .bio-container {
+    width: 30vw;
+    margin-bottom: 2vh;
+  }
+  .project-bio {
+    font-family: helvetica;
+  }
+  .image-container {
+    width: 80%;
+    height: auto;
+    position: relative;
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .work-image {
     width: 80%;
     height: auto;
     position: relative;

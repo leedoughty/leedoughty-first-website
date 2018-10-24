@@ -79,7 +79,7 @@ window.onresize = function(){
       work.choosePosition();
       }
     }
-  }, 100);
+  }, 500);
 }
 
 function initLayout() {
