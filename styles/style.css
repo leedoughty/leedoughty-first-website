@@ -97,42 +97,90 @@ index.html
 about.html
 */
 
-.about-bio-container {
-  position: fixed;
-  top: 10%; left: 40%; bottom: 0; right: 0;
-  margin: auto;
-  width: 300px;
-  height: 250px;
+@media screen and (max-width: 800px) {
+  .about-image-container {
+    margin-top: 15%;
+    margin-left: 5%;
+    text-align: center;
+  }
+  .about-image {
+    display: inline-block;
+    width: 40%;
+    height: auto;
+  }
+  .about-bio-container {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 2em;
+  }
+  .about-bio {
+    display: inline-block;
+    font-size: 4.5em;
+  }
 }
 
-.about-bio {
-  font-size: 4rem;
+@media screen and (min-width: 801px) {
+  .about-image-container {
+    text-align: center;
+    margin-top: 10%;
+  }
+  .about-image {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+  }
+  .about-bio-container {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+  .about-bio {
+    display: inline-block;
+    font-size: 1.5em;
+  }
 }
 
-.about-image-container {
-  position: fixed;
-  top: 30%; left: 40%; bottom: 0; right: 0;
-  margin: auto;
-  width: auto;
-}
 
-.about-image {
-  height: 200px;
-}
 
 /*
 contact.html
 */
 
-.contact {
-  margin-left: 5%;
-  margin-top: 5%;
-  font-size: 2rem;
+@media screen and (max-width: 800px) {
+  .contact-container {
+    text-align: center;
+    margin-top: 40%;
+  }
+  .contact {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+  .icons-container {
+    text-align: center;
+  }
+  .icon {
+    display: inline-block;
+  }
 }
 
-.github {
-  padding-top: 20px;
-  padding-left: 80px;
+@media screen and (min-width: 801px) {
+  .contact-container {
+    text-align: center;
+    margin-top: 20%;
+  }
+  .contact {
+    display: inline-block;
+    font-size: 2rem;
+  }
+  .icons-container {
+    margin-top: 1%;
+    text-align: center;
+  }
+  .icon {
+    display: inline-block;
+  }
 }
 
 /*
@@ -169,8 +217,12 @@ mobile first work layout
     font-size: 3rem;
     margin: 15vh 0 5vh;
   }
+  .url {
+    font-size: 2rem;
+    margin: 15vh 0 5vh;
+  }
   .bio-container {
-    width: 50vw;
+    width: 80vw;
     margin-bottom: 2vh;
   }
   .project-bio {
@@ -208,6 +260,10 @@ work pages layout desktop
     align-items: center;
   }
   .project-title-container {
+    font-size: 3rem;
+    margin: 15vh 0 5vh;
+  }
+  .url {
     font-size: 3rem;
     margin: 15vh 0 5vh;
   }

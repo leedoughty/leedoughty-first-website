@@ -1,7 +1,14 @@
-var works = [];
-var position_div;
-var divWidth;
-var divHeight;
+// var sUsrAg = navigator.userAgent;
+// const isChrome = () => sUsrAg.indexOf("Chrome") > -1;
+// if (isChrome, isFirefox)
+
+let sUsrAg = navigator.userAgent;
+const isChrome = () => sUsrAg.indexOf
+
+let works = [];
+let position_div;
+let divWidth;
+let divHeight;
 
 class Work {
   constructor(img) {
