@@ -28,6 +28,8 @@ header {
   z-index: 99;
   padding: 3vh 0;
   font-size: 0.75rem;
+  background-color: white;
+
 }
 
 header h1 {
@@ -80,9 +82,18 @@ image {
 index.html
 */
 
+@media screen and (max-width: 800px) {
+  .container {
+    position: relative;
+    height: 50%;
+  }
+}
+
+
 .container {
   position: relative;
-  height: 100%;
+  top: 10%;
+  height: 90%;
 }
 
 .website {
@@ -188,9 +199,6 @@ front page responsive design
 */
 
 @media screen and (max-width: 800px) {
-  .container {
-    padding-top: 80px;
-  }
   .container img {
     width: 80%;
     height: auto;
@@ -254,42 +262,40 @@ work pages layout desktop
 
 @media screen and (min-width: 801px) {
   .project-bio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    position: relative;
   }
   .project-title-container {
     font-size: 3rem;
-    margin: 15vh 0 5vh;
+    margin: 20vh 7vw 2vh 15vw;
+    width: 20vw;
+    text-align: right;
   }
   .url {
-    font-size: 3rem;
+    font-size: 1rem;
     margin: 15vh 0 5vh;
+    font-weight: bold;
   }
   .bio-container {
-    width: 30vw;
+    margin: 1vh 7vw 5vh 15vw;
+    text-align: right;
+    width: 20vw;
     margin-bottom: 2vh;
   }
   .project-bio {
     font-family: helvetica;
   }
   .image-container {
-    width: 80%;
-    height: auto;
-    position: relative;
-    padding-top: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    margin: 3vh 15vw 0 40vw;
+    width: 60%;
+    /* display: flex; */
+    /* flex-direction: column; */
   }
   .work-image {
     width: 80%;
     height: auto;
-    position: relative;
-    padding-top: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
