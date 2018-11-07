@@ -268,7 +268,9 @@ work pages layout desktop
     position: relative;
   }
   .project-title-container {
-    font-size: 3rem;
+    position: fixed;
+    font-size: 1rem;
+    font-weight: bold;
     margin: 20vh 7vw 2vh 15vw;
     width: 20vw;
     text-align: right;
@@ -279,17 +281,19 @@ work pages layout desktop
     font-weight: bold;
   }
   .bio-container {
-    margin: 1vh 7vw 5vh 15vw;
+    position: fixed;
+    margin: 25vh 7vw 5vh 15vw;
     text-align: right;
     width: 20vw;
     margin-bottom: 2vh;
   }
   .project-bio {
+    position: absolute;
     font-family: helvetica;
   }
   .image-container {
     position: absolute;
-    margin: 3vh 15vw 0 40vw;
+    margin: 15vh 15vw 0 40vw;
     width: 60%;
     /* display: flex; */
     /* flex-direction: column; */
