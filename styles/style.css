@@ -112,7 +112,7 @@ index.html
 about.html
 */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .about-image-container {
     margin-top: 15%;
     margin-left: 5%;
@@ -133,12 +133,24 @@ about.html
     display: inline-block;
     font-size: 4.5em;
   }
+} */
+
+@media screen and (max-width: 800px) {
+  .about-box {
+    
+  }
 }
 
-@media screen and (min-width: 801px) {
+/* @media screen and (min-width: 801px) {
   .about-image-container {
     text-align: center;
     margin-top: 10%;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .about-image {
     display: inline-block;
@@ -152,11 +164,46 @@ about.html
     margin-right: 35%;
   }
   .about-bio {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
     display: inline-block;
     font-size: 1.5em;
   }
+} */
+@media screen and (min-width: 801px) {
+  .about-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-sizing: border-box;
+    /* background: yellow; */
+    display: flex;
+  }
+  .about-box-image {
+    width: 20vh;
+    flex: 0 0 20vh;
+  }
+  .about-box img {
+    width: 20vh;
+    height: auto;
+    /* flex: 0 0 150%; */
+  }
+  .about-text-box {
+    margin-left: 10%;
+  }
+  .about-text-box p {
+    font-size: 20px;
+    color: grey;
+  }
+  .about-text-box h2 {
+    font-size: 20px;
+  }
 }
-
 
 
 /*
