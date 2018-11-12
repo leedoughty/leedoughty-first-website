@@ -112,66 +112,32 @@ index.html
 about.html
 */
 
-/* @media screen and (max-width: 800px) {
-  .about-image-container {
-    margin-top: 15%;
-    margin-left: 5%;
-    text-align: center;
-  }
-  .about-image {
-    display: inline-block;
-    width: 40%;
-    height: auto;
-  }
-  .about-bio-container {
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 2em;
-  }
-  .about-bio {
-    display: inline-block;
-    font-size: 4.5em;
-  }
-} */
-
 @media screen and (max-width: 800px) {
   .about-box {
-    
+    margin-top: 15vh;
+    text-align: center;
+  }
+  .about-image-box img {
+    width: 20vh;
+    height: auto;
+    display: inline-block;
+    padding-bottom: 20px;
+  }
+  .about-text-box h2 {
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+  }
+  .about-text-box p {
+    color: grey;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
   }
 }
 
-/* @media screen and (min-width: 801px) {
-  .about-image-container {
-    text-align: center;
-    margin-top: 10%;
-  }
-  .about-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .about-image {
-    display: inline-block;
-    width: 20%;
-    height: auto;
-  }
-  .about-bio-container {
-    text-align: center;
-    margin-top: 5%;
-    margin-left: 35%;
-    margin-right: 35%;
-  }
-  .about-bio {
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-    justify-content: center;
-    display: inline-block;
-    font-size: 1.5em;
-  }
-} */
 @media screen and (min-width: 801px) {
   .about-box {
     position: absolute;
