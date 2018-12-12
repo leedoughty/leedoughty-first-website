@@ -14,9 +14,8 @@ canvas.height = window.innerHeight;
 
 let ctx = canvas.getContext('2d');
 
-// make_base('../images/preload/preload3.gif');
+make_base('../images/preload/preload3.gif');
 // make_base('../images/preload/preload2.gif');
-// make_base()
 
 function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
@@ -29,8 +28,7 @@ randomNumber();
 function make_base(source) {
   base_image = new Image();
   base_image.src = source;
-  // offsetTop? offsetBottom
-  const x = randomNumber(0, 500);
+  const x = randomNumber(0, 1000);
   const y = randomNumber(0, 1000);
   const width = 200;
   base_image.onload = () => {

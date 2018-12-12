@@ -78,6 +78,10 @@ image {
   top: 100px;
 }
 
+.bot {
+  filter: grayscale(20%);
+}
+
 /*
 index.html
 */
@@ -106,6 +110,11 @@ index.html
 
 .work {
   height: 40%;
+}
+
+#home-canvas {
+  /* width: 100%; */
+  border: 1px blue solid;
 }
 
 /*
