@@ -2,13 +2,17 @@
 // const isChrome = () => sUsrAg.indexOf("Chrome") > -1;
 // if (isChrome, isFirefox)
 
-let sUsrAg = navigator.userAgent;
-const isChrome = () => sUsrAg.indexOf
+// Refactor:
+// function 5-10 lines max
+// Get random position xPos yPos
 
+const isChrome = () => sUsrAg.indexOf;
+let sUsrAg = navigator.userAgent;
 let works = [];
 let position_div;
 let divWidth;
 let divHeight;
+let resizedWindow;
 
 class Work {
   constructor(img) {
@@ -55,7 +59,6 @@ class Work {
     }
   }
 
-  // algorithm to prevent images from overlapping
   intersect(rect) {
     return !(
       rect.left > this.right ||
@@ -71,47 +74,52 @@ class Work {
   }
 }
 
+function getDimensions(element) {
+  return [element.width(), element.height()];
+}
+
 $(document).ready(initLayout);
 
 const desktop = window.matchMedia("(min-width: 800px)");
-let resizedWindow;
-window.onresize = function(){
+window.onresize = function() {
   clearTimeout(resizedWindow);
   resizedWindow = setTimeout(() => {
     if (desktop.matches) {
-    for (var i = 0; i < works.length; i++) {
-      let work = works[i];
-      divWidth = position_div.width();
-      divHeight = position_div.height();
-      work.choosePosition();
+      for (var i = 0; i < works.length; i++) {
+        let work = works[i];
+
+      const [divWidth, divHeight] = getDimensions(position_div);
+
+        // divWidth = position_div.width();
+        // divHeight = position_div.height();
+
+        work.choosePosition();
       }
     }
   }, 500);
-}
+};
 
 function initLayout() {
   loader();
-    // sorting out the height and width of the div
-    position_div = $("div.container");
-    divWidth = position_div.width();
-    divHeight = position_div.height();
-    // position_div.height(divHeight);
-    // finding the images
+  position_div = $("div.container");
+
+  divWidth = position_div.width();
+  divHeight = position_div.height();
+
   if (desktop.matches) {
-    $(".container img").each(function(){
+    $(".container img").each(function() {
       let work = new Work($(this));
       works.push(work);
       work.choosePosition();
     });
   }
-
-const mqlMobile = window.matchMedia("(max-width: 800px)")
-  mqlMobile.addListener(function(mql){
-    if(mql.matches) {
+  const mqlMobile = window.matchMedia("(max-width: 800px)");
+  mqlMobile.addListener(function(mql) {
+    if (mql.matches) {
       for (var i = 0; i < works.length; i++) {
         let work = works[i];
         work.reset();
       }
     }
-  })
+  });
 }
