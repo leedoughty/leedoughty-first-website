@@ -1,10 +1,7 @@
-// var sUsrAg = navigator.userAgent;
-// const isChrome = () => sUsrAg.indexOf("Chrome") > -1;
-// if (isChrome, isFirefox)
-
-// Refactor:
-// function 5-10 lines max
-// Get random position xPos yPos
+let loader = function(title, bio, img) {
+  $("#head-block").load("../pages/template.html", function(){
+  });
+}
 
 const isChrome = () => sUsrAg.indexOf;
 let sUsrAg = navigator.userAgent;
@@ -87,12 +84,7 @@ window.onresize = function() {
     if (desktop.matches) {
       for (var i = 0; i < works.length; i++) {
         let work = works[i];
-
       const [divWidth, divHeight] = getDimensions(position_div);
-
-        // divWidth = position_div.width();
-        // divHeight = position_div.height();
-
         work.choosePosition();
       }
     }
